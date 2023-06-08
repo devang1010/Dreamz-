@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/163bcdffcb.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: white;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff5f201f;
+    
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.sub-btn{
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px 40px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border:0;
+    outline: none;
+    border-radius: 30px;
+    
+}
+
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+    top: 120px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <div class="button-box">
+        <div id="btn"></div>
+          <button class="toggle-btn" onclick="login()">Log In</button>
+          <button class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <!-- Login -->
+        <form id="login" class="input">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Enter password" required>
+            <button type="submit" class="sub-btn">Log in</button>
+        </form>
+
+        <!-- Register -->
+        <form class="input" id="register" action="/register" method="POST">
+            <div class="form-group">
+              <input type="text" class="input-field" name="name" placeholder="Fullname" required>
+            </div>
+            <div class="form-group">
+              
+              <input type="email" class="input-field" name="username" placeholder="User id" required>
+            </div>
+            <div class="form-group">
+              
+              <input type="text" class="input-field" name="phoneNumber" placeholder="Phone number" required>
+            </div>
+            <!-- <div class="form-group"> -->
+              
+              <br>
+              <input type="radio" name="gender" value="male">
+              <label for="gender">Male</label>
+              <input type="radio" name="gender" value="female">
+              <label for="gender">Female</label>
+            <!-- </div> -->
+            <div class="form-group">
+              
+              <input type="password" class="input-field" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="sub-btn">Register</button>
+          </form>
+         
+      </div>
+      
+    </div>
+    
+
+    <script>
+        var x= document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+
+        }
+    </script>
+
+
+  </body>
+</html>

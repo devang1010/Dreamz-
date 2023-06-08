@@ -1,0 +1,561 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #f2f4f3;
+}
+
+/* ---------------------Navbarsection---------------------- */
+.navbar{ 
+    z-index: 1;
+    font-family: 'Pacifico', cursive;
+    background-color: #0a0908;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.navbar-brand:hover{
+    color: #a9927d;
+    transition: 1s;
+}
+
+.navbar ul{
+    margin: 0rem 40rem;
+}
+
+.nav-link{
+    color: white;
+    font-size: 1.2em;
+    margin-left: 50px;
+}
+
+.nav-link:hover{
+    color: #a9927d;
+    scale: 1.3;
+    transition: 0.8s;
+}
+
+/* ------------------------Hero_section----------------------- */
+
+.hero{
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url("restaurant_2.jpg");;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero_content{
+    color: white;
+    padding: 3rem 1rem;
+    line-height: 1;
+}
+
+.hero_content h1{
+    font-size: clamp(3rem, 8vw, 7rem);
+    text-transform: uppercase;
+    margin-bottom: 0.1rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.hero_content p{
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.hero_details{
+    margin-bottom: 2.5rem;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.button{
+    padding: 1rem 3rem; 
+    border: none;
+    background-color: #a9927d;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Pacifico', cursive;
+}
+
+.button:hover{
+    background-color: #49111c ;
+}
+
+/* ---------------- services ------------- */
+.services{
+    padding: 4rem;
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.services_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.services_img{
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+}
+
+#div1{
+    margin-left: 6rem;
+}
+
+.topline{
+    color: rgba(171, 78, 11, 0.863);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: clamp(1rem, 6vw, 2rem);
+    margin-top: 20rem;
+}
+
+.services_heading{
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.services_features{
+    list-style: none;
+}
+
+.services_feature{
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 2rem);
+}
+
+.fa-check-circle{
+    color: #a9927d;
+    margin: 0px 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .services_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------- Membership Section --------- */ 
+
+.membership {
+    background-color: black;
+    color: white;
+    padding: 9rem calc((100vw-1100px)/2);
+    text-align: center;
+    height: 720px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.membership h1{
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    padding: 3rem;
+}
+
+.membership_desc{
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 1rem;
+}
+
+.membership_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.membership_img{
+    width: 250px;
+    margin-left: -1rem;
+    height: 250px;
+}
+
+.membership_card{
+    padding: 2rem;
+    margin-left: 7rem;
+    min-height: 400px;
+    width: 325px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: -100px;
+}
+
+.card-icon{
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: red;
+}
+
+.membership_title{
+    margin-bottom: 1rem;
+}
+
+.membership_perks{
+    min-height: 150px;
+}
+
+.membership_perks p{
+    font-size: 1.2em;
+    margin-bottom: -0.1rem;
+}
+
+@media screen and (max-width:1100px) {
+    .membership_wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membership_card{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* ---------------------------- Menu section ------------------------------ */
+.menu_heading{
+    margin-top: 3rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu_img{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    width: auto;
+    height: 40%;
+}
+
+.feature-box:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
+    grid-gap: 2rem;  
+}
+
+/* ---------------------------- team Section --------------------- */
+.team{
+    padding: 2rem;
+    padding: 0;
+    margin-top: -30rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.team_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto, 350px);
+    position: relative;
+}
+
+.team_card{
+    margin: 1rem;
+    margin-left: 10rem;
+    border-radius: 10px;
+}
+
+.team_text1{
+    padding: 1rem;
+    width: 70%;
+    margin-left: 13rem;
+}
+
+.team_text2{
+    padding: 1rem;
+    width: 70%;
+    margin-left: 4.5rem;
+}
+
+.team_text h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.team_desc{
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    line-height: 1.4;
+}
+
+.team_img{
+    width: 90%;
+    height: 700px;
+    object-fit:cover;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+}
+
+.card1 img{
+    float: right;
+}
+
+.card2 img{
+    margin-left: -80px;
+}
+
+/* ---------------------- Email Section ----------- */
+.email{
+    background: linear-gradient(
+    180deg, 
+    rgba(0,0,0,0.6) 0%, 
+    rgba(0,0,0,0.6)35%, 
+    rgba(0,0,0,0.1) 100%), 
+    url("testmonial.jpg") no-repeat center;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    padding: 5rem calc((100vw-1300px)/2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.email_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email_content h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 5vw, 3rem);
+    padding: 0rem 1rem;
+}
+
+.email_content p{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: 0rem 1rem;
+}
+
+form{
+    z-index: 10;
+}
+
+.form_wrap input{
+    padding: 1rem 3rem;
+    outline: none;
+    width: 352px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+/* ----------------------------- footer --------------------- */
+
+footer{
+    width: 100%;    
+    background: black;
+    color: white;
+    padding: 100px 0 30px;
+    line-height: 15px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* margin-top: 3rem; */
+}
+
+.footer_heading{
+    color: #f2f4f3;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.footer_content{
+    color: white;
+    margin-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+    font-family: 'Pocifico', cursive;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.col h3{
+    width: fit-content;
+    position: relative;
+    margin-bottom: 40px;
+}
+.c1{
+    margin-top: -30px;
+}
+.c1 a{
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+}
+.c1 h6{
+    margin: 20px -3px;
+}
+.c2{
+    margin-top: -30px;
+    list-style: none;
+}
+.c2 h3{
+    margin-left: 32px;
+}
+.c2 ul{
+    margin-top: -15px;
+}
+.c2 li{
+    list-style: none;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.c2 li a{
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    padding-top: -30px;
+    margin-bottom: 0.5rem;
+}
+.ce li a:hover{
+    background-color: #a9927d;
+}
+.c3{
+    margin-top: -30px;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;    
+}
+form i{
+    font-size: 25px;
+    margin-right: 0.5rem;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 1.1em;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 16;
+    color: white;
+}
+.icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.icons .fab:hover{
+    background-color: #a9927d;
+    transition: 0.5s;
+    transform: translate(0px, -3px);
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: 20px auto;
+}
+.underline{
+    margin-top: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
