@@ -83,12 +83,19 @@
               <li class="nav-item">
                 <a class="nav-link" href="#div3">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href='login'>login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href='login'>SignUp</a>
-              </li>
+              <% if(login===false){ %>
+                <li class="nav-item">
+                  <a class="nav-link" href='login'>login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href='login'>SignUp</a>
+                </li>
+              <% } %>
+              <% if(login==true){ %>
+                <li class="nav-item">
+                  <a class="nav-link" href='logout'>logout</a>
+                </li>
+              <% } %>
             </ul>
           </div>
         </div>
