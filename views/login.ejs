@@ -114,9 +114,9 @@
           <button class="toggle-btn" onclick="register()">Register</button>
         </div>
         <!-- Login -->
-        <form id="login" class="input">
-            <input type="text" class="input-field" placeholder="User Id" required>
-            <input type="text" class="input-field" placeholder="Enter password" required>
+        <form id="login" class="input" action="/login" method="POST">
+            <input type="email" class="input-field" name="email" placeholder="Email" required>
+            <input type="password" class="input-field" name="password" placeholder="Enter password" required>
             <button type="submit" class="sub-btn">Log in</button>
         </form>
 
@@ -127,7 +127,7 @@
             </div>
             <div class="form-group">
               
-              <input type="email" class="input-field" name="username" placeholder="User id" required>
+              <input type="email" class="input-field" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
               
