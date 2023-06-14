@@ -8,6 +8,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+
 mongoose.connect("mongodb+srv://dangivishva005:vishit1121@cluster0.xqnempu.mongodb.net/userDB", { useNewUrlParser: true });
 
 const userSchema = new mongoose.Schema({
@@ -82,6 +83,10 @@ app.post("/login",async function(req,res){
     }
 })
 
+app.post("/", function(req, res){
+    var emailInput = req.body.emailInput;
+    console.log(emailInput);
+})
 
 app.listen(3000);
 
