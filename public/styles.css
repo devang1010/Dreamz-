@@ -47,6 +47,10 @@ body{
     transition: 0.8s;
 }
 
+.fa-cart-shopping{
+    color: white;
+}
+
 /* ------------------------Hero_section----------------------- */
 
 .hero{
@@ -511,6 +515,9 @@ form button .fas{
     background-color: #a9927d;
     transition: 0.5s;
     transform: translate(0px, -3px);
+}
+.fa-arrow-right{
+    color: white;
 }
 hr{
     width: 90%;
