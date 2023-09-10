@@ -17,7 +17,6 @@ const userSchema = new mongoose.Schema({
     password: String,
     gender: String,
     phoneNumber: String
-
 });
 let login=false;
 const User = new mongoose.model("User", userSchema);
